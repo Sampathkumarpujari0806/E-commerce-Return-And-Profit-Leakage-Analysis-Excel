@@ -50,16 +50,14 @@ This analysis helps uncover hidden losses and provides actionable insights to im
 - Product Category
 - Revenue
 - Profit
-- Return Flag
 - Return Reason
-- Return Loss
 - Discount Percentage
 - Shipping Cost
 - Region
 - Customer Gender
-- Customer Age Group
+- Customer Age 
 - Order Date
-- Delivery Speed
+- Delivery Date
 
 ---
 
@@ -100,6 +98,7 @@ Created derived columns:
 - Discount Band
 - Age Group (Young, Adult, Senior)
 - Return Rate
+- Delivery Spped
 - Customer Segment Classification
 
 ### 4. Dashboard & Visualization
@@ -141,136 +140,94 @@ Built an interactive dashboard to analyze:
 
 ### 1. Strong Revenue Performance but Significant Profit Leakage
 
-The business generated **$5.87M revenue** from **34.5K orders**, resulting in **$970K profit**.
+The business generated **$5.87M in revenue** from **34.5K orders**, resulting in **$970K profit**. However, **$910K** was lost due to returns, discounts, and shipping costs.
 
-However, **$910K** was lost due to returns, discounts, and shipping costs.
-
-**Insight:** For every **$1 of profit earned, approximately $0.94 is lost through profit leakage**, highlighting substantial improvement opportunities.
+**Insight:** For every **$1 of profit earned, approximately $0.94 is lost through profit leakage**, indicating substantial room for profitability improvement without increasing sales.
 
 ---
 
 ### 2. Electronics is the Highest Revenue and Highest Risk Category
 
-Electronics generated:
+Electronics generated the highest revenue of **$3.32M**, contributing approximately **57% of total revenue**, and delivered the highest profit of **$344K**. However, Electronics also generated **$245K Return Loss** and **$480K Profit Leakage**.
 
-- **$3.32M Revenue**
-- **$344K Profit**
-- **$245K Return Loss**
-- **$480K Profit Leakage**
-
-**Insight:** Electronics contributes approximately **57% of total revenue** while also generating the largest share of business losses.
+**Insight:** Electronics is both the company's biggest opportunity and biggest risk. Even a modest reduction in returns within this category could significantly increase overall profit.
 
 ---
 
 ### 3. Returns are the Largest Source of Profit Leakage
 
-Profit Leakage Breakdown:
+Returns alone account for **43% ($391K)** of the total **$910K profit leakage**, making them the largest contributor to business losses.
 
-- Returns: **43% ($391K)**
-- Discounts: **34% ($309K)**
-- Shipping Costs: **23% ($210K)**
-
-**Insight:** Returns alone account for nearly half of total profit leakage.
+**Insight:** Return reduction represents the highest-impact opportunity for improving profitability.
 
 ---
 
 ### 4. Product Quality and Description Issues Drive Most Returns
 
-| Return Reason | Loss |
-|--------------|---------:|
-| Not as described | $105K |
-| Defective Product | $94K |
-| Missing/Wrong Item | $94K |
-| No Longer Needed | $89K |
-| Slow Delivery | $6K |
+Product-related issues contribute **$293K** in losses, primarily due to:
+- Not as Described: **$105K**
+- Defective Products: **$94K**
+- Missing/Wrong Item: **$94K**
 
-**Insight:** Product-related issues contribute **$293K** in losses, making them the primary return driver.
+**Insight:** Customers are primarily returning products because expectations are not being met, rather than because of delivery delays.
 
 ---
 
 ### 5. Electronics Dominates Return Losses
 
-| Category | Return Loss |
-|----------|------------:|
-| Electronics | $245K |
-| Home | $62K |
-| Fashion | $38K |
-| Sports | $31K |
-| Beauty | $6K |
-| Toys | $6K |
-| Grocery | $1K |
+Electronics generated **$245K** in return losses out of the total **$389K** return loss.
 
-**Insight:** Electronics contributes approximately **63% of total return losses**.
+**Insight:** Electronics alone contributes approximately **63% of total return losses**, making it the primary category requiring corrective action.
 
 ---
 
 ### 6. Profit Leakage is Highly Concentrated
 
-| Category | Profit Leakage |
-|----------|---------------:|
-| Electronics | $480K |
-| Home | $154K |
-| Fashion | $97K |
-| Sports | $92K |
+Electronics contributed **$480K** in profit leakage, while Home contributed **$154K**.
 
-**Insight:** Electronics and Home together account for **$634K**, nearly **70% of total profit leakage**.
+**Insight:** Electronics and Home together account for **$634K**, representing nearly **70% of total profit leakage**.
 
 ---
 
 ### 7. South Region Generates the Highest Return Loss
 
-| Region | Return Loss |
-|---------|-----------:|
-| South | $94K |
-| East | $85K |
-| West | $77K |
-| North | $71K |
-| Central | $62K |
+The South region generated **$94K** in return losses compared to **$62K** in the Central region.
 
-**Insight:** The South region contributes **52% more return losses** than the Central region.
+**Insight:** The South region contributes approximately **52% more return losses** than the Central region, suggesting a need for deeper regional analysis.
 
 ---
 
-### 8. Customer Segments Show Similar Return Behavior
+### 8. Return Rates are Consistent Across Customer Segments
 
-- Overall Return Rate: **5.52%**
-- Highest Return Rate: **6.15%**
-- Lowest Return Rate: **3.17%**
+Customer return rates remain relatively stable across age groups and genders, generally ranging between **5% and 6%**.
 
-**Insight:** Return rates remain relatively consistent across customer groups, suggesting operational and product issues are more significant drivers than demographics.
+**Insight:** Return behavior is fairly consistent across customer groups, indicating that operational and product issues are likely more significant drivers than customer demographics.
 
 ---
 
 ### 9. Higher Discounts Reduce Profitability
 
-| Discount Level | Average Profit |
-|---------------|---------------:|
-| 0% | 30 |
-| 5% | 27 |
-| 10% | 26 |
-| 15% | 25 |
-| 20% | 23 |
-| 30% | 19 |
+Average profit declines from **30** at **0% discount** to **19** at **30% discount**.
 
-**Insight:** Increasing discounts from **0% to 30% reduces average profit by 37%**, demonstrating the negative impact of aggressive discounting.
+**Insight:** Increasing discounts from **0% to 30% reduces average profit by 37%**, demonstrating that aggressive discounting significantly reduces profitability.
 
 ---
 
 ## 📌 Business Recommendations
 
-### Priority 1: Reduce Electronics Returns
+### Reduce Electronics Returns
 
 Reducing Electronics return losses by just **20%** could recover approximately **$49K in profit**.
 
-### Priority 2: Improve Product Quality & Product Descriptions
+### Improve Product Quality & Product Descriptions
 
 Addressing **"Not as Described"** and **"Defective"** issues could potentially reduce return-related losses by up to **$199K**.
 
-### Priority 3: Review Discount Strategy
+### Review Discount Strategy
 
 Limit excessive discounting and focus on targeted promotions to preserve profit margins.
 
-### Priority 4: Investigate South Region Operations
+### Investigate South Region Operations
 
 The South region's **$94K return loss** warrants deeper analysis of logistics, fulfillment accuracy, and customer satisfaction.
 
